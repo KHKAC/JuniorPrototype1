@@ -8,7 +8,7 @@ public class PlayerControllerX : MonoBehaviour
     [SerializeField] float rotationSpeed;
     float verticalInput;
 
-    void FixedUpdate()
+    void Update()
     {
         // get the user's vertical input
         verticalInput = Input.GetAxis("Vertical");
@@ -17,6 +17,6 @@ public class PlayerControllerX : MonoBehaviour
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
 
         // tilt the plane up/down based on up/down arrow keys
-        transform.Rotate(Vector3.right * rotationSpeed * Time.deltaTime * verticalInput);
+        transform.Rotate(-Vector3.right * rotationSpeed * Time.deltaTime * verticalInput);
     }
 }

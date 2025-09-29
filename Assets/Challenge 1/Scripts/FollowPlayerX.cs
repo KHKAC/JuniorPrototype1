@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 public class FollowPlayerX : MonoBehaviour
 {
     public GameObject plane;
-    Vector3 offset = new Vector3(20, 0, 0);
+    Vector3 offset = new Vector3(35, 0, 0);
 
     
     void Update()
