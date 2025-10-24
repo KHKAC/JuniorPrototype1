@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     float horizontalInput;
     float forwardInput;
 
-    void Update()
+    void FixedUpdate()
     {
         //Input Manager를 활용한 키 입력
         horizontalInput = Input.GetAxis("Horizontal");
